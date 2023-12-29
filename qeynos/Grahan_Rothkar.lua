@@ -32,7 +32,7 @@ function event_trade(e)
 		e.other:Faction(e.self,330,-1,0); -- Freeport Militia
 		e.other:Faction(e.self,281,2,0); -- Knights of Truth
 		e.other:QuestReward(e.self,math.random(10),math.random(10),0,0,eq.ChooseRandom(5013,5014,5015,5016,5019,5020,5021,5022,5023,5024,5025),2550); -- random rusty weapon
-	elseif(e.other:GetFaction(e.self) <= 4 and item_lib.check_turn_in(e.self, e.trade, {item1 = 12188})) then -- requires amiably
+	elseif(e.other:GetFaction(e.self) <= 5 and item_lib.check_turn_in(e.self, e.trade, {item1 = 12188})) then -- requires indifferent
 		e.self:Say("You are a true Steel Warrior!! Now you shall wear my hero bracers. I designed them for my greatest gladiators and you have shown yourself mighty enough to wear them.");
 		-- Confirmed Live Factions and Experience
 		e.other:Faction(e.self,311,75); -- Steel Warriors
